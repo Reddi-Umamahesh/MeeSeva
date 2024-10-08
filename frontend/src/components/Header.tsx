@@ -4,8 +4,8 @@ import img1 from '../assets/nav-img-1.jpg'
 import img2 from "../assets/nav-img-2.jpg";
 const Header:React.FC = () => {
   return (
-    <div className="sm:h-40 h-36 w-full overflow-hidden flex items-center px-5 justify-between py-2">
-      <div className="h-[70%] flex gap-6  w-full sm:w-m-[40%]">
+    <div className="sm:h-36 h-36 w-full overflow-hidden flex items-center px-5 justify-between py-2">
+      <div className="h-[80%] flex gap-6  w-full sm:w-m-[40%]">
         <span>
           <img className=" object-cover h-full" src={img} alt="" />
         </span>
@@ -29,7 +29,7 @@ const Header:React.FC = () => {
         <div className="flex ">
           <span className="mt-auto mb-2">
             <h1 className="text-xl text-blue-800 font-medium">
-              Sri D.Sribhar Babu
+              Sri D.Sridhar Babu
             </h1>
             <p className="mt-0 leading-tight font-light">Hon'ble Minister for IT</p>
           </span>

@@ -6,7 +6,9 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
-        
+      },
+      backgroundImage: {
+        'custom-gradient': 'linear-gradient(to right, rgba(37, 99, 235, 1) 60%, rgba(37, 99, 235, 0.8) 65%, rgba(20, 184, 166, 0.8) 70%, rgba(20, 184, 166, 1) 100%)',
       },
       borderRadius: {
         lg: "var(--radius)",
