@@ -5,7 +5,7 @@ import { faWheelchair, faEarthAsia , faChevronDown } from "@fortawesome/free-sol
 
 const MiniNav:React.FC = () => {
   return (
-    <div className="h-10 bg-[#fcf9f9] w-full overflow-hidden flex gap-4 pt-1 justify-end ">
+    <div className="h-8 sm:h-10 bg-[#fcf9f9] w-full overflow-hidden flex gap-4 pt-1 justify-end ">
       <div className="md:flex  justify-around gap-3 pr-4 cursor-pointer hidden">
         <span className="pt-1 text-blue-950 hover:text-blue-700">
           skip to content
@@ -17,10 +17,10 @@ const MiniNav:React.FC = () => {
           />
         </span>
         <div className="flex gap-[1px]">
-          <div className="h-8 w-10 flex items-center justify-center bg-blue-700 text-slate-300 rounded-l-lg cursor-pointer hover:bg-blue-800">
+          <div className="h-8 w-10 flex items-center justify-center bg-[#3c85c6] text-slate-300 rounded-l-lg cursor-pointer hover:bg-blue-800">
             A
           </div>
-          <div className="h-8 w-10 flex items-center justify-center bg-blue-500 text-slate-100 rounded-r-lg cursor-pointer hover:bg-blue-400">
+          <div className="h-8 w-10 flex items-center justify-center bg-[#28A3F5] text-white rounded-r-lg cursor-pointer hover:bg-blue-400">
             A
           </div>
         </div>
@@ -35,13 +35,13 @@ const MiniNav:React.FC = () => {
           />
         </div>
         <div className="flex g">
-          <div className="h-8 w-12 flex items-center justify-center bg-blue-500 text-slate-300 rounded-l-lg cursor-pointer hover:bg-blue-600">
+          <div className="h-8 w-12 flex items-center justify-center bg-[#28A3F5] text-white rounded-l-lg cursor-pointer hover:bg-blue-600">
             A-
           </div>
-          <div className="h-8 w-9 flex items-center justify-center bg-blue-300 text-slate-100  cursor-pointer hover:bg-blue-200">
+          <div className="h-8 w-9 flex items-center justify-center bg-blue-300 text-white  cursor-pointer hover:bg-blue-200">
             A
           </div>
-          <div className="h-8 w-12 flex items-center justify-center bg-blue-500 text-slate-100 rounded-r-xl cursor-pointer hover:bg-blue-600">
+          <div className="h-8 w-12 flex items-center justify-center bg-[#28A3F5] text-white rounded-r-xl cursor-pointer hover:bg-blue-600">
             A+
           </div>
         </div>

@@ -4,13 +4,13 @@ import img1 from '../assets/nav-img-1.jpg'
 import img2 from "../assets/nav-img-2.jpg";
 const Header:React.FC = () => {
   return (
-    <div className="sm:h-36 h-36 w-full overflow-hidden flex items-center px-5 justify-between py-2">
+    <div className="sm:h-36 h-[100px] w-full overflow-hidden flex items-center px-5 justify-between py-2">
       <div className="h-[80%] flex gap-6  w-full sm:w-m-[40%]">
         <span>
           <img className=" object-cover h-full" src={img} alt="" />
         </span>
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-5xl font-medium text-blue-900">MeeSeva</h1>
+          <h1 className="text-5xl font-medium text-[#334A92]">MeeSeva</h1>
           <span className='font-light'>Government of Telanagana</span>
         </div>
       </div>

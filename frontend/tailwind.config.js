@@ -4,11 +4,25 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        cust4: '400px',
+        cust99: '990px',
+      },
+      animation: {
+        blink: "blink 1.5s linear infinite",
+      },
+      keyframes: {
+        blink: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+      },
       fontFamily: {
         sans: ["Roboto", "sans-serif"],
       },
       backgroundImage: {
-        'custom-gradient': 'linear-gradient(to right, rgba(37, 99, 235, 1) 60%, rgba(37, 99, 235, 0.8) 65%, rgba(20, 184, 166, 0.8) 70%, rgba(20, 184, 166, 1) 100%)',
+        "custom-gradient":
+          "linear-gradient(to right, rgba(37, 99, 235, 1) 60%, rgba(37, 99, 235, 0.8) 65%, rgba(20, 184, 166, 0.8) 70%, rgba(20, 184, 166, 1) 100%)",
       },
       borderRadius: {
         lg: "var(--radius)",

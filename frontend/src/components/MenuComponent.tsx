@@ -35,7 +35,7 @@ const MenuComponent: React.FC<MenuComponentProps> = ({ menuData }) => {
     }
 
     menuItems.push(
-      <MenubarMenu  key={i}>
+      <MenubarMenu   key={i}>
         <MenubarTrigger className="text-white hover:bg-white/10 focus:bg-white/20 data-[state=open]:bg-white/20 cursor-pointer border-r-2 border-dotted h-full ">
           <div className="flex flex-wrap items-center gap-1 text-base font-normal">
             {item.icon && <span className="ml-2">{item.icon}</span>}
@@ -50,7 +50,7 @@ const MenuComponent: React.FC<MenuComponentProps> = ({ menuData }) => {
   }
 
   return (
-    <div className="flex flex-wrap w-fit h-full">
+    <div className="flex flex-wrap w-fit h-full overflow-x-auto ">
       <Menubar className="bg-transparent border-none cursor-pointer h-full p-0">{menuItems}</Menubar>
     </div>
   );
