@@ -5,8 +5,9 @@ export default {
   theme: {
     extend: {
       screens: {
-        cust4: '400px',
-        cust99: '990px',
+        cust4: "400px",
+        cust49: "490px",
+        cust99: "990px",
       },
       animation: {
         blink: "blink 1.5s linear infinite",
@@ -23,6 +24,7 @@ export default {
       backgroundImage: {
         "custom-gradient":
           "linear-gradient(to right, rgba(37, 99, 235, 1) 60%, rgba(37, 99, 235, 0.8) 65%, rgba(20, 184, 166, 0.8) 70%, rgba(20, 184, 166, 1) 100%)",
+        "hover-gradient": "linear-gradient(to right, #fff, #94e620)",
       },
       borderRadius: {
         lg: "var(--radius)",

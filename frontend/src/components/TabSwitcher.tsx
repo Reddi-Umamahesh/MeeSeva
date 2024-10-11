@@ -34,13 +34,13 @@ const TabSwitcher: React.FC = () => {
       setActiveTab((prevTab) =>
         prevTab === "transactions" ? "dashboard" : "transactions"
       );
-    }, 2000);
+    }, 2500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="w-full px-2 sm:px-5 py-3 rounded-xl">
+    <div className="w-full px-2 sm:px-5 py-3 rounded-xl min-h-[400px]">
       <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
         <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 p-0 bg-transparent gap-1 sm:gap-2 relative z-10">
           <TabsTrigger
@@ -59,7 +59,7 @@ const TabSwitcher: React.FC = () => {
         <div className="mt-2 border rounded-b-lg relative z-0 bg-white">
           <TabsContent
             value="transactions"
-            className="data-[state=inactive]:hidden data-[state=active]:block"
+            className="data-[state=inactive]  data-[state=active]:block overflow-hidden"
           >
             <Card className="bg-white">
               <CardContent className="p-2 sm:p-4 sm:pt-0 pt-12">
@@ -67,7 +67,7 @@ const TabSwitcher: React.FC = () => {
                   {data1.map((ele, index) => (
                     <div
                       key={index}
-                      className="flex flex-col items-center justify-center p-2 sm:p-4 shadow-md rounded-lg transition-all hover:shadow-lg cursor-pointer"
+                      className="flex flex-col items-center justify-center p-2 sm:p-4 shadow-md rounded-lg transition-all hover:shadow-lg cursor-pointer hover:bg-hover-gradient"
                     >
                       <img
                         src={ele.img}
@@ -93,11 +93,11 @@ const TabSwitcher: React.FC = () => {
           >
             <Card className="bg-white">
               <CardContent className="space-y-4">
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:pt-2 pt-12">
+                <div className="grid grid-cols-3 gap-4 sm:pt-2 pt-12 ">
                   {data2_1.map((item, Key) => (
                     <div
                       key={Key}
-                      className="h-24 sm:h-32 bg-gray-100 rounded-lg flex flex-col items-center justify-center"
+                      className="h-24 sm:h-32 bg-gray-100 rounded-lg flex flex-col items-center justify-center cursor-pointer"
                     >
                       <img
                         src={item.img}
@@ -108,17 +108,17 @@ const TabSwitcher: React.FC = () => {
                         {" "}
                         {item.title}{" "}
                       </span>
-                      <span className="text-sm sm:text-base md:text-lg font-semibold">
+                      <span className="text-[10px] sm:text-base md:text-lg sm:font-semibold mb-1">
                         {item.count}
                       </span>
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                <div className="grid grid-cols-4 gap-4">
                   {data2_2.map((ele, key) => (
                     <div
                       key={key}
-                      className="h-20 sm:h-24 bg-gray-100 rounded-lg flex flex-col items-center justify-center"
+                      className="h-20 sm:h-24 bg-gray-100 rounded-lg flex flex-col items-center justify-center cursor-pointer"
                     >
                       <img
                         src={ele.img}
@@ -129,7 +129,7 @@ const TabSwitcher: React.FC = () => {
                         {" "}
                         {ele.title}{" "}
                       </span>
-                      <span className="text-sm sm:text-base md:text-lg font-semibold mb-1">
+                      <span className="text-[10px] sm:text-base md:text-lg sm:font-semibold mb-1">
                         {ele.count}
                       </span>
                     </div>

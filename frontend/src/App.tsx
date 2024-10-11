@@ -4,7 +4,7 @@ import Header from './components/Header'
 import Navbar from './components/Navbar'
 import NavSec from './components/NavSec'
 import HeroSection from './components/HeroSection'
-import Secondary from './components/Secondary'
+import Footer from './components/Footer'
 
 const App:React.FC = () => {
   return (
@@ -14,7 +14,8 @@ const App:React.FC = () => {
       <Navbar />
       <NavSec />
       <HeroSection />
-      <Secondary />
+      <Footer />
+      
     </div>
   )
 }
